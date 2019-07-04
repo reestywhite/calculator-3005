@@ -1,5 +1,5 @@
 # calculator-3001
-A caculator in your browser. Losely based off of the Citizen SDC-8150 Electronic Calculator.
+A calculator in your browser. Loosely based off of the Citizen SDC-8150 Electronic Calculator.
 
 ## What I Learned
 * Utilising functional programming for different features of a program.

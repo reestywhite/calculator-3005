@@ -150,4 +150,14 @@ function buttonCheck(e) {
     }
 }
 
+
 wholeCalculator.addEventListener('click', buttonCheck);
+
+window.addEventListener('keydown', function(e) {
+    const key = document.querySelector(`.btn[data-key="${e.keyCode}"]`);
+    if (key !== null){
+        fillDisplay(key.textContent, false);
+    } else {
+        return;
+    }
+});

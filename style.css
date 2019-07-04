@@ -1,0 +1,108 @@
+body {
+    background-color: #5e9ad1;
+}
+.calculator {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    margin: auto;
+    font-size: 80px;
+    width: 1070px;
+    margin-top: 100px;
+}
+
+button {
+    font-size: 80px;
+    border-radius: 15px;
+    margin: 10px;
+    
+}
+
+.displaypanel button {
+    background-color: red;
+    color: white;
+    border: solid darkred 5px;
+}
+
+.display {
+    border: solid black 5px;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 110px;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    border-radius: 15px;
+    overflow: auto;
+    background-color: #e6e8d5;
+}
+
+.numberpanel {
+    position: absolute;
+    display: grid;
+    width: 1070px;
+    height: 500px;
+    top: 260px;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: auto;
+}
+
+.displaypanel {
+    display: grid;
+    position: absolute;
+    width: 1070px;
+    height: 150px;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: auto;
+}
+.numbers {
+    display: grid;
+    border: solid black 5px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-items: stretch;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #e6e8d5;
+}
+
+.numbers button {
+    background-color: #e7ebbc;
+    color: #171633;
+    border: 4px solid #949678;
+}
+
+.operators button {
+    background-color: #171633;
+    color: white;
+    border: 4px solid #0b0b1a;
+}
+
+.operators {
+    display: grid;
+    border: solid black 5px;
+    border-left: 0px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-items: stretch;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #e6e8d5;
+}
+
+button:hover {
+    transform: scale(1.02, 1.02);
+    filter: brightness(90%);
+  }
+
+#zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+#add {
+    grid-row-start: 2;
+    grid-row-end: 4; 
+}
